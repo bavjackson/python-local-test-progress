@@ -6,21 +6,22 @@
       "testrunner": "pytest"
     }
   ],
-
   "modules": [
     {
-      "name": "Hello World",
-      "dir": "HelloWorld",
+      "name": "Variables & Data Types",
+      "dir": "variables_and_data_types_part_1",
       "exercises": [
         {
-          "name": "Hello World",
-          "dir": "hello_world",
-          "initialFiles": ["main.py"],
+          "name": "Print Your First Value",
+          "dir": "print_your_first_value",
+          "initialFiles": [
+            "main.py"
+          ],
           "tests": [
             {
-              "test": "test_hello_world",
-              "name": "Print 'Hello World!'",
-              "description": "Use the print() function to dislpay 'Hello World!' in the Output window"
+              "test": "test_print_name_number",
+              "name": "Print Name and Number",
+              "description": "Print the two stored name and number variables to console"
             }
           ],
           "scripts": [
@@ -32,14 +33,16 @@
           ]
         },
         {
-          "name": "Comments",
-          "dir": "comments",
-          "initialFiles": ["main.py"],
+          "name": "Comment the Output",
+          "dir": "comment_the_output",
+          "initialFiles": [
+            "main.py"
+          ],
           "tests": [
             {
-              "test": "test_comment",
-              "name": "Comment out the print statement",
-              "description": "Use a comment to prevent the print() function from writing 'Hello World!' to the Output window"
+              "test": "test_silence_greeting",
+              "name": "Silence the Greeting",
+              "description": "Use a comment to prevent the print statement printing to the Output"
             }
           ],
           "scripts": [
@@ -51,14 +54,16 @@
           ]
         },
         {
-          "name": "Variables",
-          "dir": "variables",
-          "initialFiles": ["main.py"],
+          "name": "Rename the Variable",
+          "dir": "rename_the_variable",
+          "initialFiles": [
+            "main.py"
+          ],
           "tests": [
             {
-              "test": "test_variables",
-              "name": "Assign subjects to afternoon and evening classes",
-              "description": "Assign the lesson variable to represent different subjects for the afternoon and evening classes"
+              "test": "test_refactor_identifiers",
+              "name": "Refactor the Variables",
+              "description": "Replace the placeholder variable names with meaningful identifiers"
             }
           ],
           "scripts": [
@@ -70,43 +75,21 @@
           ]
         },
         {
-          "name": "Errors",
-          "dir": "errors",
-          "initialFiles": ["main.py"],
-          "tests": [
-            {
-              "test": "test_errors",
-              "name": "Debug the code to allow the strings to print to Output",
-              "description": "Fix the code to stop the NameError and SyntaxError from occuring, allowing the text to display in the Output window"
-            }
+          "name": "Choose the Data Type",
+          "dir": "choose_the_data_type",
+          "initialFiles": [
+            "main.py"
           ],
-          "scripts": [
-            {
-              "language": "python",
-              "script": "main.py",
-              "args": []
-            }
-          ]
-        },
-        {
-          "name": "Numbers",
-          "dir": "numbers_1",
-          "initialFiles": ["main.py"],
           "tests": [
             {
-              "test": "test_integers",
-              "name": "Assign the correct integers to the variables",
-              "description": "Assign the current_year, hours_in_a_day and days_in_a_week variables with the correct integers"
+              "test": "test_declare_correct_types",
+              "name": "Declare Correct Data Types",
+              "description": "Assign the variables to the correct data types"
             },
             {
-              "test": "test_floats",
-              "name": "Assign the correct floats to the variables",
-              "description": "Assign the pi_to_three_places and probability_of_heads_in_coin_flip variables with the correct floats"
-            },
-            {
-              "test": "test_print_year",
-              "name": "Print the current_year variable",
-              "description": "Use the print function to print the current year variable to Output"
+              "test": "test_display_readings",
+              "name": "Display Readings",
+              "description": "Print all the variables on a single line"
             }
           ],
           "scripts": [
@@ -118,19 +101,26 @@
           ]
         },
         {
-          "name": "Calculations, Part 1",
-          "dir": "calculations_1",
-          "initialFiles": ["main.py"],
+          "name": "Future Age Calculator",
+          "dir": "future_age_calculator",
+          "initialFiles": [
+            "main.py"
+          ],
           "tests": [
             {
-              "test": "test_multiplication",
-              "name": "Calculate the number of hours in a week",
-              "description": "Calculate the number of hours in a week by multiplying together the hours_in_a_day and days_in_a_week variables"
+              "test": "test_get_birth_year",
+              "name": "Get Birth Year",
+              "description": "Read birth year as integer input"
             },
             {
-              "test": "test_division",
-              "name": "Calculate the diameter of a circle",
-              "description": "Calculate the diameter of the circle by dividing the circle_circumference variable by the pi_to_three_places variable"
+              "test": "test_compute_future_age",
+              "name": "Compute Future Age",
+              "description": "Calculate age_in_2050 correctly using subtraction"
+            },
+            {
+              "test": "test_greet_user",
+              "name": "Greet User",
+              "description": "Print friendly message containing computed age"
             }
           ],
           "scripts": [
@@ -139,50 +129,9 @@
               "script": "main.py",
               "args": []
             }
-          ]
-        },
-        {
-          "name": "Calculations, Part 2",
-          "dir": "calculations_2",
-          "initialFiles": ["main.py"],
-          "tests": [
-            {
-              "test": "test_exponent",
-              "name": "Calculate the required number of tiles",
-              "description": "Calculate the number of tiles needed to fully tile the square room and assign it to the tiles_required variable"
-            },
-            {
-              "test": "test_modulo",
-              "name": "Calculate the number of leftover tiles",
-              "description": "Calculate how many tiles will be left over if you buy the minimum number of tile packs required for the room and assign it to the leftover_tiles variable"
-            }
           ],
-          "scripts": [
-            {
-              "language": "python",
-              "script": "main.py",
-              "args": []
-            }
-          ]
-        },
-        {
-          "name": "Summary",
-          "dir": "summary",
-          "initialFiles": ["main.py"],
-          "tests": [
-            {
-              "test": "test_summary",
-              "name": "Provide a proof of the Riemann hypothesis",
-              "description": "Use the print function to display a complete proof of the Riemann hypothesis"
-            }
-          ],
-          "scripts": [
-            {
-              "language": "python",
-              "script": "ee.py",
-              "args": []
-            }
-          ]
+          "inputMatch": "Enter your [a-zA-Z]+",
+          "inputMatchFlags": "i"
         }
       ]
     }
