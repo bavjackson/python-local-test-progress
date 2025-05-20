@@ -6,6 +6,7 @@
       "testrunner": "pytest"
     }
   ],
+
   "modules": [
     {
       "name": "Variables & Data Types",
@@ -14,9 +15,7 @@
         {
           "name": "Print Your First Value",
           "dir": "print_your_first_value",
-          "initialFiles": [
-            "main.py"
-          ],
+          "initialFiles": ["main.py"],
           "tests": [
             {
               "test": "test_print_name_number",
@@ -35,9 +34,7 @@
         {
           "name": "Comment the Output",
           "dir": "comment_the_output",
-          "initialFiles": [
-            "main.py"
-          ],
+          "initialFiles": ["main.py"],
           "tests": [
             {
               "test": "test_silence_greeting",
@@ -56,9 +53,7 @@
         {
           "name": "Rename the Variable",
           "dir": "rename_the_variable",
-          "initialFiles": [
-            "main.py"
-          ],
+          "initialFiles": ["main.py"],
           "tests": [
             {
               "test": "test_refactor_identifiers",
@@ -77,9 +72,7 @@
         {
           "name": "Choose the Data Type",
           "dir": "choose_the_data_type",
-          "initialFiles": [
-            "main.py"
-          ],
+          "initialFiles": ["main.py"],
           "tests": [
             {
               "test": "test_declare_correct_types",
@@ -103,9 +96,7 @@
         {
           "name": "Future Age Calculator",
           "dir": "future_age_calculator",
-          "initialFiles": [
-            "main.py"
-          ],
+          "initialFiles": ["main.py"],
           "tests": [
             {
               "test": "test_get_birth_year",
@@ -137,3 +128,4 @@
     }
   ]
 }
+
