@@ -6,7 +6,6 @@
       "testrunner": "pytest"
     }
   ],
-
   "modules": [
     {
       "name": "Variables & Data Types",
@@ -128,4 +127,3 @@
     }
   ]
 }
-
